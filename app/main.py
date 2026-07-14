@@ -12,6 +12,12 @@ app = FastAPI(title="CloudDocs")
 app.include_router(user_router)
 
 
+
+
+
+app = FastAPI()
+
+
 @app.get("/")
 def home():
     return {
